@@ -1,0 +1,7 @@
+PACIENTE: {res$paciente}
+PESO: {res$peso} kg
+BHE 24H: {res$balance} ml
+I: VO {res$via_oral} + EV {res$endovenoso} + TTO {res$tratamiento} = {res$ingresos} ml
+E: O {res$diuresis} + D {res$orina_deposiciones} + PI {res$perdidas_insensibles} = {res$egresos} ml
+FU: {res$flujo_urinario}
+FLUJO DIARREICO: {res$flujo_diarreico} ml/kg/h

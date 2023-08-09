@@ -20,15 +20,15 @@ get_balance <- function(db, paciente, fecha_hoy = Sys.Date()) {
   i <- db$paciente == paciente & db$fecha == fecha_hoy - 1
   fila_ayer <- db[i, ]
   
-  if (fila_ayer$consistencia_deposiciones == "grumosas") {
-    orina_extra <- fila_ayer$deposiciones * 2/3
-  } else if (fila_ayer$consistencia_deposiciones == "acuosas") {
-    orina_extra <- fila_ayer$deposiciones * 1/3
-  } else if (fila_ayer$consistencia_deposiciones == "semiacuosas") {
-    orina_extra <- fila_ayer$deposiciones * 1/2 
-  } else {
-    orina_extra <- 0
-  }
+  # if (fila_ayer$consistencia_deposiciones == "grumosas") {
+  #   orina_extra <- fila_ayer$deposiciones * 2/3
+  # } else if (fila_ayer$consistencia_deposiciones == "acuosas") {
+  #   orina_extra <- fila_ayer$deposiciones * 1/3
+  # } else if (fila_ayer$consistencia_deposiciones == "semiacuosas") {
+  #   orina_extra <- fila_ayer$deposiciones * 1/2 
+  # } else {
+  #   orina_extra <- 0
+  # }
   orina_extra <- 0
   
   if (fila_ayer$peso <= 10) {
@@ -55,6 +55,7 @@ get_balance <- function(db, paciente, fecha_hoy = Sys.Date()) {
     }
   }
   perdidas_insensibles <- round(perdidas_insensibles)
+  superficie_corporal <- round(superficie_corporal, digits = 2)
   
   flujo_diarreico <- fila_ayer$deposiciones / fila_ayer$peso / fila_ayer$horas
   flujo_diarreico <- round(flujo_diarreico, digits = 2)
@@ -62,10 +63,15 @@ get_balance <- function(db, paciente, fecha_hoy = Sys.Date()) {
   ingresos <- fila_ayer$via_oral + fila_ayer$endovenoso + fila_ayer$tratamiento
   egresos <- fila_ayer$diuresis + fila_ayer$deposiciones + fila_ayer$otros_egresos + perdidas_insensibles
   balance <- ingresos - egresos
+  if (balance >= 0) {
+    balance <- paste0("+", balance)
+  }
   
   list(
     paciente = paciente,
     peso = fila_ayer$peso,
+    horas = fila_ayer$horas,
+    superficie_corporal = superficie_corporal,
     diuresis = fila_ayer$diuresis,
     orina_deposiciones = fila_ayer$deposiciones,
     perdidas_insensibles = perdidas_insensibles,

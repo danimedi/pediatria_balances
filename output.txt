@@ -1,67 +1,57 @@
-PACIENTE: risco sandoval
-PESO: 27 kg
-BHE 24H: -433 ml
-I: VO 1200 + EV 0 + TTO 0 = 1200 ml
-E: O 940 + D 300 + PI 393 = 1633 ml
-FU: 39.85 ml/m2/h
-FLUJO DIARREICO: 0.46 ml/kg/h
-
-
-
-PACIENTE: yepez ramirez
-PESO: 30.9 kg
-BHE 24H: -592 ml
-I: VO 1040 + EV 0 + TTO 0 = 1040 ml
-E: O 950 + D 50 + PI 432 = 1632 ml
-FU: 36.64 ml/m2/h
-FLUJO DIARREICO: 0.07 ml/kg/h
-
-
-
-PACIENTE: llanos cabanillas
-PESO: 26.5 kg
-BHE 24H: -688 ml
-I: VO 1750 + EV 20 + TTO 0 = 1770 ml
-E: O 2070 + D 0 + PI 388 = 2458 ml
-FU: 88.92 ml/m2/h
+PACIENTE: avalos quispe
+PESO: 46.7 kg, SC: 1.42 m2
+BHE 24h: -62 ml
+I: VO 1130 + EV 2025 + TTO 0 = 3155 ml
+E: O 2650 + D 0 + PI 567 + OTROS 0 = 3217 ml
+FU: 77.88 ml/m2/h
 FLUJO DIARREICO: 0 ml/kg/h
-
-
-
-PACIENTE: cometivos bocanegra
-PESO: 32 kg
-BHE 24H: NA ml
-I: VO NA + EV NA + TTO NA = NA ml
-E: O 2530 + D 0 + PI 443 = NA ml
-FU: 95.27 ml/m2/h
-FLUJO DIARREICO: 0 ml/kg/h
-
-
-
-PACIENTE: leandro rodriguez
-PESO: 26 kg
-BHE 24H: -531 ml
-I: VO 1482 + EV 0 + TTO 0 = 1482 ml
-E: O 1280 + D 350 + PI 383 = 2013 ml
-FU: 55.74 ml/m2/h
-FLUJO DIARREICO: 0.56 ml/kg/h
-
-
-
-PACIENTE: flores alcaraz
-PESO: 24 kg
-BHE 24H: 654 ml
-I: VO 2395 + EV 0 + TTO 0 = 2395 ml
-E: O 1070 + D 310 + PI 361 = 1741 ml
-FU: 49.34 ml/m2/h
-FLUJO DIARREICO: 0.54 ml/kg/h
 
 
 
 PACIENTE: soria babilonia
-PESO: 24 kg
-BHE 24H: 39 ml
-I: VO 1000 + EV 340 + TTO 340 = 1680 ml
-E: O 980 + D 300 + PI 361 = 1641 ml
-FU: 45.19 ml/m2/h
-FLUJO DIARREICO: 0.52 ml/kg/h
+PESO: 29.3 kg, SC: 1.04 m2
+BHE 24h: +84 ml
+I: VO 1940 + EV 0 + TTO 0 = 1940 ml
+E: O 1270 + D 170 + PI 416 + OTROS 0 = 1856 ml
+FU: 50.83 ml/m2/h
+FLUJO DIARREICO: 0.24 ml/kg/h
+
+
+
+PACIENTE: flores sanchez
+PESO: 27 kg, SC: 0.98 m2
+BHE 24h: +1143 ml
+I: VO 1633 + EV 700 + TTO 13 = 2346 ml
+E: O 810 + D 0 + PI 393 + OTROS 0 = 1203 ml
+FU: 34.34 ml/m2/h
+FLUJO DIARREICO: 0 ml/kg/h
+
+
+
+PACIENTE: cuya manco
+PESO: 43.7 kg, SC: 1.36 m2
+BHE 24h: +256 ml
+I: VO 930 + EV 2150 + TTO 0 = 3080 ml
+E: O 2180 + D 100 + PI 544 + OTROS 0 = 2824 ml
+FU: 66.8 ml/m2/h
+FLUJO DIARREICO: 0.1 ml/kg/h
+
+
+
+PACIENTE: villavicencio galeano
+PESO: 55 kg, SC: 1.57 m2
+BHE 24h: +159 ml
+I: VO 1565 + EV 300 + TTO 80 = 1945 ml
+E: O 1160 + D 0 + PI 626 + OTROS 0 = 1786 ml
+FU: 30.87 ml/m2/h
+FLUJO DIARREICO: 0 ml/kg/h
+
+
+
+PACIENTE: llanos cabanillas
+PESO: 26 kg, SC: 0.96 m2
+BHE 24h: +1107 ml
+I: VO 2640 + EV 0 + TTO 20 = 2660 ml
+E: O 1050 + D 120 + PI 383 + OTROS 0 = 1553 ml
+FU: 45.72 ml/m2/h
+FLUJO DIARREICO: 0.19 ml/kg/h
